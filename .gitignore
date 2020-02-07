@@ -3,3 +3,7 @@ WindowsFormsApp2/.vs/WindowsFormsApp2/v16/Server/sqlite3/db.lock
 *.mdf
 WindowsFormsApp2/WindowsFormsApp2/App_Data/Database1.mdf
 WindowsFormsApp2/WindowsFormsApp2/bin/Debug/App_Data/Database1_log.ldf
+*.mdf
+*.mdf
+*.mdf
+*.ldf
