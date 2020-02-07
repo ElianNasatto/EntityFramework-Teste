@@ -19,11 +19,12 @@ namespace WindowsFormsApp2
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            Contexto contextozinho = new Contexto();
+            Contexto contextozinho = new Contexto(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=C:\Users\elian\Documents\GitHub\EntityFramework-Teste\WindowsFormsApp2\WindowsFormsApp2\App_Data\Database1.mdf;Initial Catalog=aspnet-PreventUrlModifications;Integrated Security=True");
             Class1 classe = new Class1();
             classe.Id = 1;
             classe.Nome = "ola mundo";
             contextozinho.Class.Add(classe);
+            contextozinho.Class.Remove(classe);
             contextozinho.SaveChanges();
         }
     }

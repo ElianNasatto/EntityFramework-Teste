@@ -12,12 +12,12 @@ namespace WindowsFormsApp2
 {
     public class Contexto : DbContext
     {
-        public Contexto() : base("Banquinho")
+        public Contexto(string connectionString) : base(connectionString)
         {
+            Database.SetInitializer<Contexto>(new CreateDatabaseIfNotExists<Contexto>());
         }
 
         public DbSet<Class1> Class { get; set; }
-
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
